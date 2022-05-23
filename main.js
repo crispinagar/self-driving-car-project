@@ -16,7 +16,10 @@ if(localStorage.getItem("bestBrain")){
   bestCar.brain=JSON.parse(localStorage.getItem("bestBrain"));
 }
 const traffic=[
-  new Car(road.getLaneCentre(1),-100,30,50,"DUMMY",2)
+  new Car(road.getLaneCentre(1),-100,30,50,"DUMMY",2),
+  new Car(road.getLaneCentre(0),-300,30,50,"DUMMY",2),
+  new Car(road.getLaneCentre(2),-300,30,50,"DUMMY",2),
+  
 ];
 
 animate();
